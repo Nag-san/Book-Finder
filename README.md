@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+📚 Book Finder App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple and elegant book search application built with React + Tailwind CSS that allows users to explore books by title, author, or topic using the Open Library API.
 
-## Available Scripts
+🚀 Live Demo
 
-In the project directory, you can run:
+👉 View on CodeSandbox
+ (replace with your deployed link)
 
-### `npm start`
+🧠 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🔍 Search Books — by title, author, or subject
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+📖 Book Details Page — shows full info and cover
 
-### `npm test`
+❤️ Favorites System — save books using localStorage
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+⚡ Responsive UI — works seamlessly on mobile and desktop
 
-### `npm run build`
+💬 Error & Loading Handling — graceful messages for empty results or API errors
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+🛠️ Tech Stack
+Category	Tools Used
+Frontend	React 18, Tailwind CSS
+Routing	React Router DOM
+API	Open Library Search API
+State Management	React Hooks
+Storage	Browser LocalStorage
+⚙️ API Reference
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Search Books:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+https://openlibrary.org/search.json?title={bookTitle}
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Book Details:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+https://openlibrary.org/works/{id}.json
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+🧩 Project Structure
+src/
+ ├── components/ → Reusable UI components
+ ├── pages/ → Home, BookDetails, Favorites
+ ├── services/ → API fetching logic
+ ├── utils/ → LocalStorage helper
+ ├── App.jsx → Routing setup
+ └── index.css → Tailwind setup
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+💻 Local Setup
+# 1️⃣ Clone the repository
+git clone https://github.com/yourusername/book-finder.git
 
-## Learn More
+# 2️⃣ Install dependencies
+npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# 3️⃣ Run locally
+npm run dev
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+🧠 Learnings
 
-### Code Splitting
+Integrating external REST APIs in React
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Managing persistent state with localStorage
 
-### Analyzing the Bundle Size
+Modular component architecture with Tailwind CSS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Responsive design and error handling
 
-### Making a Progressive Web App
+👤 Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Alex (Demo Persona)
+Built by Nagraj 💻
+Inspired by Open Library’s mission to make books discoverable for everyone.
 
-### Advanced Configuration
+🌟 Future Enhancements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Pagination / Infinite Scroll
 
-### Deployment
+Debounced Search
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Dark / Light Theme Toggle
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Favorite Book Export / Share
